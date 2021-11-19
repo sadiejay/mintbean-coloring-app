@@ -1,5 +1,12 @@
 // start resets
+html {
+	box-sizing: border-box;
+}
 
-
+*
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
 // end resets
