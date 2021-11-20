@@ -1,7 +1,5 @@
 # Skillcrush All Stars - Painting App
 
-This app was build with digital artists in mind using HTML, SCSS, JS. With designs by .
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -9,21 +7,21 @@ This app was build with digital artists in mind using HTML, SCSS, JS. With desig
   - [Screenshot](#screenshot)
   - [Building the Project](#building-the-project)
   - [Links](#links)
-- [My process](#my-process)
+- [Our process](#our-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What we learned](#what-we-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+This app was built with digital artists in mind using HTML, SCSS, JS. Designs by Araevia Jones .
 
 ### The challenge
 
-Users should be able to:
+To build an app that let users express their creativity in a visual format. Users can drag their mouse across the screen to make free-form lines.
 
 
 ### Screenshot
@@ -33,14 +31,14 @@ Users should be able to:
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
 ### Building the project
-Intructions on how to build here/
+Instructions on how to build here/
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## OUr process
+## Our process
 
 ### Built with
 
