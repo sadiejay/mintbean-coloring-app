@@ -22,6 +22,17 @@ body.dark {
   background: #292C35;
 }
 
+.tool-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.theme-toggle {
+  position: relative;
+  width: 100%;
+}
+
 .checkbox {
   opacity: 0;
   position: absolute;
