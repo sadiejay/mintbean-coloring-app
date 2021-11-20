@@ -3,3 +3,4 @@ thumbs.db
 .vscode
 .eslintrc.json
 node_modules/
+.vscode
