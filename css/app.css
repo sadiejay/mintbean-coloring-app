@@ -10,7 +10,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    /* changed the width to allow for elements to take up all grid space */
+    width: 100%;
   }
   .container h1 {
     margin-bottom:10px;
@@ -20,7 +21,8 @@
 .nav {
     width: 100%;
     height: 100%;
-     margin-top: -13em;
+    /* removed margin top to allow for colors to fit on screen */
+     /* margin-top: -13em; */
      margin-left: 3em;
     display: grid;
     grid-template-columns: repeat(3, 45px);
