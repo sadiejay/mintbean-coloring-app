@@ -12,8 +12,9 @@ body.dark {
     align-content: center;
 	width: 100%;
 }
-
-.toolbar {
+// added button-bar to link to alt index
+.toolbar,
+.button-bar {
 	width: 80%;
 	display: flex;
 	justify-content: space-evenly;

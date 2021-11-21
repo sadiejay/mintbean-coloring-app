@@ -2,6 +2,7 @@
 @use "./global";
 @use "./toolbar";
 @use "./toggle";
+// comment out paint partial to remove potential conflicting styles
 @use "./paint";
 
 

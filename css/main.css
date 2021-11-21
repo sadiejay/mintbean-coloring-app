@@ -55,18 +55,22 @@ body.dark .fas {
   width: 100%;
 }
 
-.toolbar {
+.toolbar,
+.button-bar {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
 }
-.toolbar .fas {
+.toolbar .fas,
+.button-bar .fas {
   margin: 35px;
 }
-.toolbar .fa-trash {
+.toolbar .fa-trash,
+.button-bar .fa-trash {
   color: #C4C4C4;
 }
-.toolbar .fa-save {
+.toolbar .fa-save,
+.button-bar .fa-save {
   color: #C4C4C4;
 }
 
