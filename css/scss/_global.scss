@@ -1,6 +1,43 @@
 // start global
+body {
+	background-color: #fafafa;
+    display: grid; 
+    grid-template-columns:repeat(12, 1fr);  
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 3% 3%; 
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+}
 
+body {
+    grid-template-areas: 
+      "panel2 panel2 canvas canvas canvas canvas canvas canvas canvas canvas panel1 panel1"
+      "panel2 panel2 canvas canvas canvas canvas canvas canvas canvas canvas panel1 panel1"
+      ". . . panel-3 panel-3 panel-3 panel-3 panel-3 . . . ."; 
+  }
+//   in order of the dom *NOT* grid
 
+// brush + canvas controls areas
+.brush-canvas-control-grid { 
+    grid-area: panel1; 
+}
 
+// canvas area
+.canvas-grid { 
+    grid-area: canvas; 
+}
+
+// color tool area
+.color-grid { 
+    grid-area: panel2; 
+}
+
+// buttons area
+.button-grid { 
+    grid-area: panel-3; 
+}
+
+  
 
 // end global
