@@ -9,54 +9,142 @@
       src="https://kit.fontawesome.com/4c38177798.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/alternate-paint/final.css" />
-    <script src="/alternate-paint/final.js" defer></script>
-  </head>
-  <body>
+    <!-- adds styling from paint version-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="/alternate-paint/alt.css" />
+    <script src="/alternate-paint/alt.js" defer></script>
 
-    <div id="pen-tools" class="pen-tools"> <!--ends line 87 -->
-      <div id="drawing-colors" class="drawing-colors"> <!--ends of line 60-->
-            <div
-            class="color-circle active"
-            data-color="hotpink"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="orange"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="red"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="yellow"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="black"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="blue"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="white"
-            onclick="selectColor(this)"
-            ></div>
-            <div
-            class="color-circle"
-            data-color="green"
-            onclick="selectColor(this)"
-            ></div>
-      </div> <!--end of drawing colors-->
+    <!-- add toggle js -->
+    <script src="../toggle.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container brush-canvas-control-grid">
+      <div class="brush-controls">
+        <!-- brush controls -->
+        <div id="pen-size" class="pen-size">
+          <label for="pen-size"><i class="fa fa-pencil"></i>Pen size</label>
+          <input
+            type="range"
+            name="pen-size"
+            id="pen-size"
+            value="10"
+            step="5"
+            min="5"
+            max="40"
+            onchange="penSizeChange(this.value)"
+          />
+        </div>
+      </div>
+      <!-- end brush controls -->
+      <div class="canvas-controls">
+        <label for="cavnas-bgcolors">Canvas color:</label>
+        <select name="cavnas-bgcolors" id="cavnas-bgcolors">
+          <option
+            value="white"
+            onclick="document.querySelector('canvas').style.backgroundColor = '#FDFDFD';"
+          >
+            White
+          </option>
+          <option
+            value="light-grey"
+            onclick="document.querySelector('canvas').style.backgroundColor = '#E5E5E5';"
+          >
+            Light Grey
+          </option>
+          <option
+            value="medium-grey"
+            onclick="document.querySelector('canvas').style.backgroundColor = '#C4C4C4';"
+          >
+            Medium Grey
+          </option>
+          <option
+            value="dark-grey"
+            onclick="document.querySelector('canvas').style.backgroundColor = '#454545';"
+          >
+            Dark Grey
+          </option>
+        </select>
+      </div>
+      <!-- end canvas controls -->
+    </div>
+
+    <div class="container button-grid">
+        <div class="button-area">
+            <div class="button-bar">
+            <!-- download button -->
+            <a href="" download="my_painting.png">
+                <i class="fas fa-save save fa-3x"></i>
+            </a>
+            <!-- download button -->
+
+            <!-- clear button -->
+            <i class="fas fa-trash clear fa-3x"> </i>
+            <!-- clear button -->
+            </div>
+            <!-- end button bar -->
+            <div class="theme-toggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+            </div>
+            <!-- theme toggle -->
+        </div>
+        <!-- button area -->
+    </div>
+    <!-- button grid -->
+
+    <!-- color area -->
+    <div id="pen-tools" class="pen-tools container color-grid">
+      <!-- old "nav" -->
+      <div id="drawing-colors" class="drawing-colors">
+        <div
+          class="color-circle active"
+          data-color="hotpink"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="orange"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="red"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="yellow"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="black"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="blue"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="white"
+          onclick="selectColor(this)"
+        ></div>
+        <div
+          class="color-circle"
+          data-color="green"
+          onclick="selectColor(this)"
+        ></div>
+      </div>
+      <!-- custom color picker -->
       <div id="favContainer">
         <label for="favcolor"
           ><i class="fas fa-palette">Choose Another Color:</i></label
@@ -68,45 +156,30 @@
           value="#eddfdf"
           onchange="favColor(this)"
         />
-      </div> <!--end of favContainer-->
-      <div id="pen-size" class="pen-size">
-        <label for="pen-size"><i class="fa fa-pencil"></i>Pen size</label>
-        <input
-          type="range"
-          name="pen-size"
-          id="pen-size"
-          value="10"
-          step="5"
-          min="5"
-          max="40"
-          onchange="penSizeChange(this.value)"
-        />
-      </div><!--end of pen size-->
+      </div>
+    </div>
+    <!-- end old nav -->
 
-    </div><!--end of pen tools-->
-
-    <div class="container button-grid">
-        <div class="button-area">
-            <div class="button-bar">
-    <a href="" download="my_painting.png"><i class="fas fa-save save fa-3x"></i></a
-        ><i class="fas fa-trash clear fa-3x"><strong></strong></i>
-    <div class="board">
-        </div>
-        <div class="theme-toggle">
-            <input type="checkbox" class="checkbox" id="chk" />
-        </div>
-            <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <div class="ball"></div>
-            </label>
-            </div>
-            
-            <!-- theme toggle -->
-
+    <!-- canvas -->
+    <div class="container canvas-grid board">
+      <!-- need to change this to fix button area -->
       <canvas width="800px" height="590"></canvas>
-    </div> -->
-    <!--end board
-    
+    </div>
+    <!-- end canvas -->
+
+    <!-- script for avoiding flicker on reload -->
+    <script>
+      const theme = localStorage.getItem("theme") || "light";
+      document.body.className = theme;
+    </script>
+
+    <!-- sample script for clear with trash -->
+    <script>
+      document
+        .querySelector(".fa-trash")
+        .addEventListener("click", function () {
+          c.clearRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
   </body>
 </html>

@@ -17,8 +17,13 @@
 
     <!-- add toggle js -->
     <script src="../toggle.js" defer></script>
+ 
   </head>
-
+         <!-- script for avoiding flicker on reload -->
+         <script>
+          const theme = localStorage.getItem("theme") || "light";
+          document.body.className = theme;
+        </script>
   <body>
     <div class="container brush-canvas-control-grid">
       <div class="brush-controls">
@@ -167,19 +172,15 @@
     </div>
     <!-- end canvas -->
 
-    <!-- script for avoiding flicker on reload -->
-    <script>
-      const theme = localStorage.getItem("theme") || "light";
-      document.body.className = theme;
-    </script>
 
-    <!-- sample script for clear with trash -->
+
+    <!-- sample script for clear with trash this is a duplicate
     <script>
       document
         .querySelector(".fa-trash")
         .addEventListener("click", function () {
           c.clearRect(0, 0, canvas.width, canvas.height);
         });
-    </script>
+    </script> -->
   </body>
 </html>
