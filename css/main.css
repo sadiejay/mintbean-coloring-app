@@ -23,17 +23,39 @@ body {
 body.dark {
   background: #292C35;
 }
+body.dark .fas {
+  color: #C4C4C4;
+}
 
 .tool-container {
   display: flex;
   flex-direction: column;
   align-content: center;
+  width: 100%;
+}
+
+.toolbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.toolbar .fas {
+  margin: 35px;
+}
+.toolbar .fa-trash {
+  color: #C4C4C4;
+}
+.toolbar .fa-save {
+  color: #C4C4C4;
 }
 
 .theme-toggle {
   position: relative;
   width: 100%;
   margin-top: 3em;
+  margin-left: 7em;
+  margin-right: 3em;
+  height: auto;
 }
 
 .checkbox {
@@ -81,9 +103,8 @@ body.dark {
 }
 
 #canvas {
-  height: 10vh;
+  height: 100%;
   width: 50vw;
-  background-color: orange;
 }
 
 .container {
@@ -221,8 +242,4 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.save {
-  background-color: #0f65d4;
 }/*# sourceMappingURL=main.css.map */
