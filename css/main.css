@@ -6,6 +6,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -66,23 +68,23 @@ body.dark {
   color: #f39c12;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 #canvas {
   height: 10vh;
   width: 50vw;
   background-color: orange;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
 .nav {
   width: 100%;
   height: 100%;
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 50%; */
   display: grid;
   grid-template-columns: repeat(3, 45px);
 }
@@ -191,6 +193,12 @@ body.dark {
   background-color: #e3abce;
 }
 
+.button {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
 button {
   border: none;
   outline: none;
@@ -205,4 +213,4 @@ button {
 
 .save {
   background-color: #0f65d4;
-}/*# sourceMappingURL=main.css.map */
+}
