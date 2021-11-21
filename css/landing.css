@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+    --purple: rgb(197, 106, 197);
+    --blue: lightblue;
+    --black:black;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+.container,
+.wrapper,
+main,
+.features-container,
+.about-us__devs,
+.about-us__desgn,
+.about-us__card,
+footer
+ {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
