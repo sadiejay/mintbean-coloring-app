@@ -72,5 +72,5 @@ const favColor = (elem) =>{
   c.fillStyle = elem.value;
 }
 document.querySelector("a").addEventListener("click", (e)=>{
-  e.target.href= canvas.toDateURL()
+  e.target.href= canvas.toDataURL()
 })
