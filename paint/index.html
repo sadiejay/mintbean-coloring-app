@@ -20,6 +20,24 @@
     const theme = localStorage.getItem('theme') || 'light';
     document.body.className = theme;
   </script>
+
+<div class="container brush-canvas-control-grid">
+  <div class="brush-canvas-controls">
+    <label for="cavnas-bgcolors">Canvas color:</label>
+    <select name="cavnas-bgcolors" id="cavnas-bgcolors">
+      <option value="white"
+      onclick="document.querySelector('canvas').style.backgroundColor = '#FDFDFD';">White</option>
+      <option
+       value="light-grey"
+       onclick="document.querySelector('canvas').style.backgroundColor = '#E5E5E5';">Light Grey</option>
+      <option value="medium-grey"
+      onclick="document.querySelector('canvas').style.backgroundColor = '#C4C4C4';">Medium Grey</option>
+      <option value="dark-grey"
+      onclick="document.querySelector('canvas').style.backgroundColor = '#454545';">Dark Grey</option>
+    </select>
+  </div>
+</div><!-- brush + canvas controls-->
+
   <div class="container canvas-grid">
     <canvas id="canvas"></canvas>
   </div>
