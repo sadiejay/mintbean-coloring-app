@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alt painting app</title>
+    <script
+      src="https://kit.fontawesome.com/4c38177798.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/alternate-paint/alt.css">
+    <script src="/alternate-paint/alt.js" defer></script>
+  </head>
+  <body>
+    <a href="" download="my_painting.png">Download Painting</a><i class = "fa fa-refresh refresh-btn"><strong>Clear</strong></i>
+    <div id="pen-tools" class="pen-tools">
+      <div id="drawing-colors" class="drawing-colors">
+      <div
+        class="color-circle active"
+        data-color="hotpink"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="orange"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="red"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="yellow"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="black"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="blue"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="white"
+        onclick="selectColor(this)"
+      ></div>
+      <div
+        class="color-circle"
+        data-color="green"
+        onclick="selectColor(this)"
+      ></div>
+    </div>
+      <div id="favContainer">
+        <label for="favcolor"><i class="fas fa-palette">Choose Another Color:</i></label>
+        <input
+          type="color"
+          name="favcolor"
+          id="favcolor"
+          value="#eddfdf"
+          onchange="favColor(this)"
+        />
+      </div>
+
+      <div id="pen-size" class="pen-size">
+        <label for="pen-size"><i class="fa fa-pencil"></i>Pen size</label>
+        <input
+          type="range"
+          name="pen-size"
+          id="pen-size"
+          value="10"
+          step="5"
+          min="5"
+          max="40"
+          onchange="penSizeChange(this.value)"
+        />
+      </div>
+    </div>
+<div class="board">
+    <canvas width="800px" height="590"></canvas>
+</div>
+  </body>
+</html>
