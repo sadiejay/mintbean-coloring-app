@@ -4,14 +4,18 @@ html {
     --blue: lightblue;
     --black:black;
   }
-  
-  *,
-  *:before,
-  *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-  }
+}
+
+.container {
+    width:minmax(95%, 960px);
+}
 
 .container,
 .wrapper,
@@ -26,4 +30,41 @@ footer
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover{
+    color: var(--blue);
+}
+
+
+header {
+    width: 100%;
+    padding: 2em;
+    background-color: var(--purple);
+}
+
+nav .wrapper{
+    align-items: flex-end;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 20px;
 }
