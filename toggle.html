@@ -19,21 +19,21 @@
         const theme = localStorage.getItem('theme') || 'light';
         document.body.className = theme;
       </script>
-    <div class="tools-container">
-        <div class="toolbar">
-            <i class="fas fa-save"></i>
-            <i class="fas fa-trash"></i>
-            <i class="fas fa-sun"></i>
-        </div>
-        <div class="theme-toggle">
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
+        <div class="tools-container">
+            <div class="toolbar">
+                <i class="fas fa-save"></i>
+                <i class="fas fa-trash"></i>
                 <i class="fas fa-sun"></i>
-                <div class="ball"></div>
-            </label>
-        </div>
-    </div>
+            </div><!-- toolbar -->
+            <div class="theme-toggle">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div><!-- theme toggle -->
+        </div><!-- toolbar-container -->
     <div class="canvas-container"></div>
     
 </body>
