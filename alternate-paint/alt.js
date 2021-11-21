@@ -50,9 +50,9 @@ function drawLine(x1,y1,x2,y2){
     c.stroke();
 }
 
-document.querySelector(".fa-refresh").addEventListener("click",function(){
+document.querySelector(".fa-trash"). addEventListener("click",function(){
   c.clearRect(0,0, canvas.width,canvas.height)
-})
+}) // need to change the i class it was .fa-refresh
 const selectColor = (elem) =>{
   removeActiveCircleColor()
   c.fillStyle = elem.getAttribute("data-color")
