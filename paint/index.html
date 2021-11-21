@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="/css/main.css">
     <title>Painting App</title>
     <script src="/sketch.js" defer></script>
+    <script src = "toggle.js" defer></script>
 </head>
 <body>
+  <script>
+    const theme = localStorage.getItem('theme') || 'light';
+    document.body.className = theme;
+  </script>
   <canvas id="canvas"></canvas>
   <div class="container">
   <div class="nav">
