@@ -1,0 +1,293 @@
+/* =====ALT. CSS======== */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    background-color: #fff;
+    border: 1px dashed;
+    margin:auto;
+}
+/* a{
+    display: inline-block;
+    background: #69c;
+    color:#fff;
+    padding: 5px 10px; 
+    border-radius: 100px;
+} */
+
+.pen-tools {
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+}
+/* .fa-refresh {
+    margin-left: 10px;
+    background-color: red;
+    padding:5px 10px;
+    border-radius: 100px;
+    color:white;
+    cursor: pointer;
+} */
+
+.pen-size {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.board {
+    width:800px;
+    margin:auto;
+}
+.drawing-colors {
+    display:flex;
+    margin-bottom: 10px;
+}
+.color-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left:5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.color-circle:nth-child(1){
+    background-color:hotpink;
+}
+.color-circle:nth-child(2){
+    background-color:orange;
+}
+.color-circle:nth-child(3){
+    background-color:red;
+}
+.color-circle:nth-child(4){
+    background-color:yellow;
+}
+.color-circle:nth-child(5){
+    background-color:black;
+}
+.color-circle:nth-child(6){
+    background-color:blue;
+}
+.color-circle:nth-child(7){
+    background-color:white;
+}
+.color-circle:nth-child(8){
+    background-color:green;
+}
+.active {
+    transform: scale(1.3);
+}
+/* =====APP. CSS======== */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* changed the width to allow for elements to take up all grid space */
+    width: 100%;
+  }
+
+.nav {
+    width: 100%;
+    height: 100%;
+    /* removed margin top to allow for colors to fit on screen */
+     /* margin-top: -13em; */
+     margin-left: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 45px);
+  }
+/*   
+  .clr {
+    height: 30px;
+    width: 30px;
+    margin: 3%;
+    border-radius: 10%;
+    border: 2px solid #d6d6d6;
+  } */
+  /* canvas {
+    height: 100%;
+    width: 50vw;
+    background-color: #FDFDFD;
+    margin-bottom: 13px;
+    box-shadow: -3px -3px 3px 3px gray;
+  } */
+
+  /* =====MAIN CSS======== */
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3% 3%;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+  }
+  
+  body {
+    grid-template-areas: "panel2 panel2 canvas canvas canvas canvas canvas canvas canvas canvas panel1 panel1" "panel2 panel2 canvas canvas canvas canvas canvas canvas canvas canvas panel1 panel1" ". . . panel-3 panel-3 panel-3 panel-3 panel-3 . . . .";
+  }
+  
+  .brush-canvas-control-grid {
+    grid-area: panel1;
+  }
+  
+  .canvas-grid {
+    grid-area: canvas;
+  }
+  
+  .color-grid {
+    grid-area: panel2;
+  }
+  
+  .button-grid {
+    grid-area: panel-3;
+  }
+  
+  body.dark {
+    background: #292C35;
+  }
+  body.dark .fas {
+    color: #C4C4C4;
+  }
+  
+  .tool-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .toolbar,
+  .button-bar {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .toolbar .fas,
+  .button-bar .fas {
+    margin: 35px;
+  }
+  .toolbar .fa-trash,
+  .button-bar .fa-trash {
+    color: #C4C4C4;
+  }
+  .toolbar .fa-save,
+  .button-bar .fa-save {
+    color: #C4C4C4;
+  }
+  
+  .theme-toggle {
+    position: relative;
+    width: 100%;
+    margin-top: 3em;
+    margin-left: 7em;
+    margin-right: 3em;
+    height: auto;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  /* changed the sizes of the label and ball because of reset */
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  }
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+  
+  #canvas {
+    height: 10vh;
+    width: 50vw;
+    background-color: orange;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  .nav {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 45px);
+  }
+
+  
+  .button {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 0.6em 1em;
+    border-radius: 3px;
+    background-color: #03bb56;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

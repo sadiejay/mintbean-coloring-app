@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alt painting app</title>
+    <script
+      src="https://kit.fontawesome.com/4c38177798.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/alternate-paint/final.css" />
+    <script src="/alternate-paint/final.js" defer></script>
+  </head>
+  <body>
+
+    <div id="pen-tools" class="pen-tools"> <!--ends line 87 -->
+      <div id="drawing-colors" class="drawing-colors"> <!--ends of line 60-->
+            <div
+            class="color-circle active"
+            data-color="hotpink"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="orange"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="red"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="yellow"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="black"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="blue"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="white"
+            onclick="selectColor(this)"
+            ></div>
+            <div
+            class="color-circle"
+            data-color="green"
+            onclick="selectColor(this)"
+            ></div>
+      </div> <!--end of drawing colors-->
+      <div id="favContainer">
+        <label for="favcolor"
+          ><i class="fas fa-palette">Choose Another Color:</i></label
+        >
+        <input
+          type="color"
+          name="favcolor"
+          id="favcolor"
+          value="#eddfdf"
+          onchange="favColor(this)"
+        />
+      </div> <!--end of favContainer-->
+      <div id="pen-size" class="pen-size">
+        <label for="pen-size"><i class="fa fa-pencil"></i>Pen size</label>
+        <input
+          type="range"
+          name="pen-size"
+          id="pen-size"
+          value="10"
+          step="5"
+          min="5"
+          max="40"
+          onchange="penSizeChange(this.value)"
+        />
+      </div><!--end of pen size-->
+
+    </div><!--end of pen tools-->
+
+    <div class="container button-grid">
+        <div class="button-area">
+            <div class="button-bar">
+    <a href="" download="my_painting.png"><i class="fas fa-save save fa-3x"></i></a
+        ><i class="fas fa-trash clear fa-3x"><strong></strong></i>
+    <div class="board">
+        </div>
+        <div class="theme-toggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+        </div>
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+            </div>
+            
+            <!-- theme toggle -->
+
+      <canvas width="800px" height="590"></canvas>
+    </div> -->
+    <!--end board
+    
+  </body>
+</html>
