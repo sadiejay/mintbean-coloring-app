@@ -10,22 +10,44 @@ body {
 
 body.dark {
 	background: #292C35;
+// come back to this
+	.fas {
+		color: #C4C4C4;
+	}
 }
 
 .tool-container {
     display: flex;
     flex-direction: column;
     align-content: center;
+	width: 100%;
 }
 
 .toolbar {
-    // width: ;
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+
+	.fas {
+		margin: 35px;
+	}
+
+	.fa-trash{
+		color: #C4C4C4;
+	}
+
+	.fa-save {
+		color: #C4C4C4;
+	}
 }
 
 .theme-toggle {
 	position:relative;
 	width: 100%;
 	margin-top: 3em;
+	margin-left: 7em;
+	margin-right: 3em;
+	height: auto;
 }
 
 .checkbox {
