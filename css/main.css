@@ -33,6 +33,7 @@ body.dark {
 .theme-toggle {
   position: relative;
   width: 100%;
+  margin-top: 3em;
 }
 
 .checkbox {
@@ -224,4 +225,4 @@ button {
 
 .save {
   background-color: #0f65d4;
-}
+}/*# sourceMappingURL=main.css.map */
