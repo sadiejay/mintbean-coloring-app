@@ -20,28 +20,31 @@
     const theme = localStorage.getItem('theme') || 'light';
     document.body.className = theme;
   </script>
-  <div class="container">
+  <div class="container canvas-grid">
     <canvas id="canvas"></canvas>
-    <!-- toggle list -->
-    <div class="tools-container">
-      <div class="toolbar">
-        <i class="fas fa-save save fa-3x"></i>
-        <i class="fas fa-trash clear fa-3x"></i>
-      </div><!-- toolbar -->
-      <div class="theme-toggle">
-        <input type="checkbox" class="checkbox" id="chk" />
-      
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-    
-      </div><!-- theme toggle -->
-    </div><!-- toolbar-container -->
   </div>
 
-  <div class="container">
+  <div class="container button-grid">
+        <!-- toggle list -->
+        <div class="button-container">
+          <div class="toolbar">
+            <i class="fas fa-save save fa-3x"></i>
+            <i class="fas fa-trash clear fa-3x"></i>
+          </div><!-- toolbar -->
+          <div class="theme-toggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+          
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+        
+          </div><!-- theme toggle -->
+        </div><!-- toolbar-container -->
+  </div>
+
+  <div class="container color-grid">
     <div class="nav">
       <div class="clr" data-clr="red"></div>
       <div class="clr" data-clr="#f16161"></div>
