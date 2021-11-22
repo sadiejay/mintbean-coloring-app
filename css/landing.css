@@ -159,3 +159,13 @@ ul li {
 .f-three {
     margin: 0em 5em;
 }
+
+/* try-app section */
+.try-app {
+    background-color: var(--purple);
+}
+
+.try-app figure {
+    width: 100%;
+    box-shadow: var(--shadow-elevation-medium);
+}
