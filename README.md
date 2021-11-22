@@ -5,15 +5,13 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Building the Project](#building-the-project)
-  - [Links](#links)
 - [Our process](#our-process)
   - [Built with](#built-with)
   - [What we learned](#what-we-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -31,6 +29,7 @@ To build an app that let users express their creativity in a visual format. User
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
 ## Our process
+Our goals for this project was to create a relaxing coloring app for the user who want to decompress or for the user who just want to create art. Our designer, researched the latest paint apps and wanted to create a relaxing  landing page that users would  gravitate to try Colurs. Designer created two wire frames and handed them off to the Developers. The Developers started working on creating the paint app. Fixing any bugs, or issues during that process. Once the bugs and issues were finished the Developers started styling landing page and painting app.
 
 ### Built with
 
@@ -43,7 +42,7 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ### What We Learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The Designer learned how to ship assets to the Developers.  The Developers learned how to use HTML Canvas,and JavaScript to create effects for mood changes, paint brushes, and color selectors.
 
 
 
