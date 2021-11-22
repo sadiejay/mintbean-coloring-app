@@ -21,6 +21,7 @@ html {
 .wrapper,
 main,
 .features-container,
+.features-card,
 .about-us__devs,
 .about-us__desgn,
 .about-us__card,
@@ -33,7 +34,8 @@ footer
 }
 
 .wrapper {
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 a,
@@ -49,12 +51,15 @@ a:hover{
 
 header {
     width: 100%;
-    padding: 2em;
+    padding: 0em 2em 5em;
     background-color: var(--purple);
 }
 
 nav .wrapper{
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-direction: row-reverse;
 }
 
 nav ul {
@@ -66,5 +71,52 @@ nav ul {
 
 ul li {
     list-style-type: none;
-    padding: 20px;
+    padding: 0em 1em;
+}
+
+/* about section */
+.about-app {
+    width: 100%;
+    padding: 1em 1.5em;
+    margin-bottom: 1 5em;
+}
+
+button {
+    background-color: var(--blue);
+    outline: var(--black) solid 1px;
+    padding: 5px;
+}
+
+
+/* tools and features */
+
+.features {
+    width: 100%;
+}
+
+.features-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.features-card {
+    /* flex: 1 1 33%; */
+    /* margin: 0em -2em; */
+    padding: 1em;
+}
+
+.features-card__icons img {
+    aspect-ratio: 1 / 1;
+    width: 50px;
+}
+
+.features-card__content {
+    width: auto;
+    /* may change this later if too wide */
+    padding: 1em;
+    text-align: center;
+}
+
+.f-three {
+    margin: 0em 5em;
 }
