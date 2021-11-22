@@ -19,12 +19,14 @@
     <script src="../toggle.js" defer></script>
  
   </head>
-         <!-- script for avoiding flicker on reload -->
-         <script>
-          const theme = localStorage.getItem("theme") || "light";
-          document.body.className = theme;
-        </script>
+
   <body>
+    <!-- script for avoiding flicker on reload -->
+    <script>
+    const theme = localStorage.getItem("theme") || "light";
+    document.body.className = theme;
+    </script>
+    
     <div class="container brush-canvas-control-grid">
       <div class="brush-controls">
         <!-- brush controls -->
