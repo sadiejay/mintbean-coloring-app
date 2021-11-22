@@ -3,6 +3,18 @@ html {
     --purple: rgb(197, 106, 197);
     --blue: lightblue;
     --black:black;
+    /* hover color = l-20% */
+    --hover-blue: hsl(195, 53%, 59%);
+    /* active color = l -30% */
+    --active-blue: hsl(195, 53%, 29%);
+    /* shadow color is read only -- need to change when final color detal is given */
+    --shadow-color: 0deg 0% 63%;
+    --shadow-elevation-medium:
+    0.1px 0.3px 0.4px hsl(var(--shadow-color) / 0.36),
+    0.3px 1px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
+    0.8px 2.6px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
+    1.9px 6.3px 7.4px -2.5px hsl(var(--shadow-color) / 0.36);
+
   }
 
 *,
@@ -38,6 +50,12 @@ footer
     margin: auto;
 }
 
+header,
+section,
+footer {
+    width: 100%;
+}
+
 a,
 a:visited {
     text-decoration: none;
@@ -47,6 +65,33 @@ a:visited {
 a:hover{
     color: var(--blue);
 }
+
+button {
+    background-color: var(--blue);
+    outline: var(--black) solid 1px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em 0.75em;
+    min-width: 10ch;
+    min-height: 44px;
+}
+
+button:hover,
+button:active {
+    background-color: var(--hover-blue);
+    transition: 220ms all ease-in-out;
+  }
+
+button:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px var(--active-blue);
+  }
+
 
 
 header {
@@ -79,12 +124,6 @@ ul li {
     width: 100%;
     padding: 1em 1.5em;
     margin-bottom: 1 5em;
-}
-
-button {
-    background-color: var(--blue);
-    outline: var(--black) solid 1px;
-    padding: 5px;
 }
 
 
