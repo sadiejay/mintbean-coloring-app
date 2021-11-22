@@ -148,7 +148,7 @@ body.dark .fas {
   grid-template-columns: repeat(3, 45px);
 }
 
-.clr {
+/* .clr {
   height: 30px;
   width: 30px;
   background-color: blue;
@@ -250,7 +250,7 @@ body.dark .fas {
 
 .clr:nth-child(24) {
   background-color: #e3abce;
-}
+} */
 
 .button {
   display: flex;
@@ -268,4 +268,4 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}/*# sourceMappingURL=main.css.map */
+}
