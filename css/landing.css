@@ -15,7 +15,12 @@ html {
     0.8px 2.6px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
     1.9px 6.3px 7.4px -2.5px hsl(var(--shadow-color) / 0.36);
     --cursive: 'Playball', cursive;
-    --regular: 'Ubuntu', sans-serif;
+    --sans-serif: 'Ubuntu', sans-serif;
+    font-size: 16px;
+
+    /* collumn width 76 
+    gutter width 16. 
+    Columns 12 */
   }
 
 *,
@@ -27,7 +32,8 @@ html {
 }
 
 .container {
-    width:minmax(95%, 960px);
+    width:100% ;
+    font-family: var(--sans-serif);
 }
 
 .container,
@@ -35,6 +41,7 @@ html {
 main,
 .features-container,
 .features-card,
+.features-card__content,
 .about-us.wrapper,
 .about-us__devs,
 .about-us__desgn,
@@ -48,11 +55,12 @@ footer
 }
 
 .wrapper {
-    width: 90%;
+    width:min(95%, 1104px);
     margin: auto;
 }
 
 header,
+main,
 section,
 footer {
     width: 100%;
@@ -68,11 +76,12 @@ a:hover{
     color: var(--blue);
 }
 
-button {
+button,
+.btn {
     background-color: var(--blue);
     outline: var(--black) solid 1px;
     border: none;
-    font-family: inherit;
+    font-family: var(--sans-serif);
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -83,23 +92,69 @@ button {
 }
 
 button:hover,
-button:active {
+button:active,
+.btn:hover,
+.btn:active {
     background-color: var(--hover-blue);
     transition: 220ms all ease-in-out;
   }
 
-button:focus {
+button:focus,
+.btn:focus {
     outline-style: solid;
     outline-color: transparent;
     box-shadow: 0 0 0 4px var(--active-blue);
   }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-block: 0;
+    margin-inline: 0;
+    margin:0;
+    padding:0;
+    width: fit-content;
+}
 
+h1 {
+    font-family: var(--cursive);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 300;
+
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
 
 header {
+    display: flex;
     width: 100%;
     padding: 0em 2em 5em;
     background-color: var(--purple);
+}
+
+header .wrapper {
+    display: inline-flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+figure {
+    display: inline;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+.logo img {
+    aspect-ratio: 95 / 94;
+    width: 75px;
+    margin-top:1em;
 }
 
 nav .wrapper{
@@ -127,17 +182,27 @@ ul li {
     padding: 1em 1.5em;
     margin-bottom: 1 5em;
 }
+.about-app__colurs p {
+ max-width: 65ch;
+}
 
+.about-app button {
+    font-family: var(--sans-serif);
+    width: max(92px, calc((5*16px) + (4*76px)));
+    margin-top: 2rem;
+}
 
 /* tools and features */
 
 .features {
     width: 100%;
+    margin-top: 10rem;
 }
 
 .features-container {
     display: flex;
     flex-flow: row wrap;
+    align-items: flex-start;
 }
 
 .features-card {
@@ -146,9 +211,16 @@ ul li {
     padding: 1em;
 }
 
+.features-card__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12em;
+}
+
 .features-card__icons img {
     aspect-ratio: 1 / 1;
-    width: 50px;
+    width: 76px;
 }
 
 .features-card__content {
@@ -165,6 +237,11 @@ ul li {
 /* try-app section */
 .try-app {
     background-color: var(--purple);
+    width: 100%;
+}
+
+.try-app h2 {
+    margin: 5rem 0;
 }
 
 .try-app figure {
@@ -172,7 +249,22 @@ ul li {
     box-shadow: var(--shadow-elevation-medium);
 }
 
+.btn-container {
+    width: min(100%, 920px);
+    display:inline-flex;
+    justify-content: space-evenly;
+}
+
+.demo-btn,
+.tutorial-btn {
+    font-family: var(--cursive);
+}
+
 /* about us styles */
+.about-us {
+    margin: 12rem 0;
+}
+
 .about-us__devs {
     flex-flow: row wrap;
 }
@@ -198,4 +290,12 @@ ul li {
 /* footer */
 footer {
     background-color: var(--purple);
+}
+
+
+@media only screen and (min-width: 625px) {
+    header .wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
