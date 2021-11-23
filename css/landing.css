@@ -14,7 +14,8 @@ html {
     0.3px 1px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
     0.8px 2.6px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
     1.9px 6.3px 7.4px -2.5px hsl(var(--shadow-color) / 0.36);
-
+    --cursive: 'Playball', cursive;
+    --regular: 'Ubuntu', sans-serif;
   }
 
 *,
