@@ -192,3 +192,9 @@ ul li {
 .about-us__socials > a {
     margin: 0em 1em;
 }
+
+
+/* footer */
+footer {
+    background-color: var(--purple);
+}
