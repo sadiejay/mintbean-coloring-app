@@ -34,6 +34,7 @@ html {
 main,
 .features-container,
 .features-card,
+.about-us.wrapper,
 .about-us__devs,
 .about-us__desgn,
 .about-us__card,
@@ -168,4 +169,26 @@ ul li {
 .try-app figure {
     width: 100%;
     box-shadow: var(--shadow-elevation-medium);
+}
+
+/* about us styles */
+.about-us__devs {
+    flex-flow: row wrap;
+}
+
+.about-us__card {
+    margin: 2em;
+    max-width: 50%;
+}
+
+.about-us__socials {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top:1em;
+    width: 100%;
+}
+
+.about-us__socials > a {
+    margin: 0em 1em;
 }
