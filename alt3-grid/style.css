@@ -34,6 +34,21 @@ body.dark .fas {
   color: #c4c4c4;
 }
 
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.collapse.show {
+  max-height: 99em;
+  transition: max-height 0.5s ease-in-out;
+}
+
+button {
+  background: transparent;
+  margin-bottom: 1em;
+}
 
 a{
   text-decoration: none;
@@ -89,7 +104,7 @@ canvas {
   /* margin-top: -29em; */
   flex-direction: column;
   /* margin-right: 45em; */
-  margin-bottom: 2em;
+  margin: 2em 0em;
 }
 
 .tool-container {
@@ -235,5 +250,5 @@ canvas {
   margin-bottom: 1em;
   /* border: 1px solid #000000; */
   /* margin-left: 64em;
-  margin-top: 4.9em;
+  margin-top: 4.9em;*/
 }

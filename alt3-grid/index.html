@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>alt painting app</title>
+  <title>Colurs | HTML5 Canvas Painting App</title>
   <script src="https://kit.fontawesome.com/4c38177798.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
@@ -28,7 +28,14 @@
 
   <!-- color area -->
   <div id="pen-tools" class="pen-tools">
-    <div id="drawing-colors" class="drawing-colors">
+    <button 
+      class="btn btn-primary btn__first" 
+      data-toggle="collapse"
+      data-target=".collapse"
+      data-text="Collapse">
+      <i class="fas fa-eye-slash fa-lg"></i>
+    </button>
+    <div id="drawing-colors" class="drawing-colors collapse">
       <div class="color-circle active" data-color="hotpink" onclick="selectColor(this)"></div>
       <div class="color-circle" data-color="orange" onclick="selectColor(this)"></div>
       <div class="color-circle" data-color="red" onclick="selectColor(this)"></div>
@@ -84,7 +91,7 @@
   <!-- needs two divs maybe-->
   <div class="brush-canvas-controls">
     <!-- brush controls -->
-    <div id="pen-size" class="pen-size">
+    <div id="pen-size" class="pen-size collapse">
       <!-- brush size -->
       <div class="pen">
         <label for="pen-size"><i class="fa fa-pencil"></i> Pen size</label>
@@ -94,7 +101,7 @@
     </div><!-- end brush controls -->
 
     <!-- canvas controls -->
-    <div class="canvas-controls">
+    <div class="canvas-controls collapse">
       <label for="cavnas-bgcolors">Canvas color:</label>
       <select name="cavnas-bgcolors" id="cavnas-bgcolors">
         <option value="white" onclick="document.querySelector('canvas').style.backgroundColor = '#FDFDFD';">
