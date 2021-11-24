@@ -210,7 +210,10 @@ ul li {
     /* margin: 0em -2em; */
     padding: 1em;
 }
-
+.features-card__content em {
+    font-size: 9px;
+    color: rgb(220, 194, 257);
+}
 .features-card__icons {
     display: flex;
     align-items: center;
@@ -241,7 +244,11 @@ ul li {
 }
 
 .try-app h2 {
-    margin: 5rem 0;
+    padding: 2rem 0;
+    /* margin: 5rem 0; */
+}
+.try-app iframe {
+    margin-top: -12px;
 }
 
 .try-app figure {

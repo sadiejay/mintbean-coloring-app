@@ -250,5 +250,11 @@ canvas {
   margin-bottom: 1em;
   /* border: 1px solid #000000; */
   /* margin-left: 64em;
-  margin-top: 4.9em;*/
+  margin-top: 4.9em; */
+}
+
+@media(max-width:768px) {
+  canvas {
+    max-width: 525px;
+  }
 }
