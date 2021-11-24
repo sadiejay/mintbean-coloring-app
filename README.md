@@ -15,6 +15,7 @@ An app that let users express their creativity in a visual format. Users can dra
 
 ### Screen Shots
 
+
 ### Deployed Site
 - Colurs- [Colurs](https://sadiejay.github.io/mintbean-coloring-app)
 
@@ -34,8 +35,6 @@ Our goals for this project was to create a relaxing coloring app for the user wh
 The Designer learned how to ship assets to the Developers.  The Developers learned how to use HTML Canvas,and JavaScript to create effects for mood changes, paint brushes, and color selectors.
 
 ## Authors
-- Sadie Jay - [Sadie Jay](https://github.com/sadiejay)
-- Jasmine Reese - [Jasmine Reese](https://jasdevelops.com)
-- Araevia Jones- [Araevia Jones](https://linkedin.com/in/araevia-jones-87b559131)
-
-
+- Developer - [Sadie Jay](https://github.com/sadiejay)
+- Developer - [Jasmine Reese](https://jasdevelops.com)
+- Designer- [Araevia Jones](https://linkedin.com/in/araevia-jones-87b559131)
