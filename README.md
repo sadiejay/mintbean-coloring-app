@@ -14,7 +14,9 @@
 An app that let users express their creativity in a visual format. Users can drag their mouse across the screen to make free-form lines. Also, they can toggle between dark mode or light mode.
 
 ### Screen Shots
+<img width="500" alt="colurs_ss" src="https://user-images.githubusercontent.com/70559611/143163692-5ac7c839-be37-4f96-b2ad-6c7e90c2c2e2.png">
 
+<img width="500" alt="Screen Shot 2021-11-23 at 7 07 46 PM" src="https://user-images.githubusercontent.com/70559611/143164534-0a8d02b9-0cc0-4faf-a0c8-3124f2ead0c6.png">
 
 ### Deployed Site
 - Colurs- [Colurs](https://sadiejay.github.io/mintbean-coloring-app)
