@@ -1,18 +1,26 @@
 const colorCircle = document.querySelectorAll(".color-circle");
+const canvasContainer = document.querySelector('.board');
 
 let penSize = 10;
 let isDrawing;
 let x;
 let y;
 
+// sizes canvas to div
 const canvas = document.querySelector("canvas");
+canvas.width = canvasContainer.clientWidth;
+canvas.height = canvasContainer.clientHeight;
+let rect = canvas.getBoundingClientRect();
 
 c = canvas.getContext("2d");
 
 canvas.addEventListener("mousedown", (e) => {
   isDrawing = true;
-  x = e.offsetX;
-  y = e.offsetY;
+  // x = e.offsetX;
+  // y = e.offsetY;
+  // accounts for parent div in mousedown 
+   x = e.clientX - rect.left;
+   y = e.clientY - rect.top;
 });
 
 canvas.addEventListener("mouseup", () => {
@@ -22,7 +30,8 @@ canvas.addEventListener("mouseup", () => {
 });
 
 canvas.addEventListener("mousemove", (e) => {
-  draw(e.offsetX, e.offsetY);
+  // calculates difference in parent div and canvas
+  draw((e.clientX - rect.left), (e.clientY - rect.top));
 });
 
 c.fillStyle = "hotpink";
