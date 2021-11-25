@@ -7,6 +7,7 @@
   - [Deployed site](#deployed-site)
   - [Tutorial](#tutorial)
   - [Built with](#built-with)
+  - [Built Locally](#built-locally)
   - [What we learned](#what-we-learned)
 - [Authors](#authors)
   
@@ -58,8 +59,12 @@ The Developers started working on creating the paint app. Fixing any bugs, or is
 - CSS Grid
 - JS
 
+### Build Locally
+- Either clone this repo or download the project files.
+- Open the alt3-grid/index.html file in your browser.
+
 ### What We Learned
-The Designer learned how to ship assets to the Developers.  The Developers learned how to use HTML Canvas,and JavaScript to create effects for mood changes, paint brushes, and color selectors.
+The Website Designer learned how to ship assets to the Developers. The Developers learned how to use HTML Canvas, CSS Grid/Flexbox and JavaScript to create effects for mood changes, paint brushes, and color selectors.
 
 ## Authors
 - Developer - [Sadie Jay](https://github.com/sadiejay)
