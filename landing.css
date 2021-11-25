@@ -186,6 +186,10 @@ ul li {
  max-width: 65ch;
 }
 
+.about-app__colurs img {
+    margin-bottom: 1em;
+}
+
 .about-app button {
     font-family: var(--sans-serif);
     width: max(92px, calc((5*16px) + (4*76px)));
@@ -248,7 +252,7 @@ ul li {
     /* margin: 5rem 0; */
 }
 .try-app iframe {
-    margin-top: -12px;
+    margin-bottom: 1em;
 }
 
 .try-app figure {
